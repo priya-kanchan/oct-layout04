@@ -1,0 +1,144 @@
+/* Readable typography and a viewport-height opening banner. */
+:root{--muted:#625e53}
+body{font-size:16px;line-height:1.65}
+.btn,.hero-ctas .btn,.signature-residence .btn,.tour-copy .btn,#overview .btn-row .btn{font-size:12px;letter-spacing:.6px;min-height:44px}
+.text-link,.pricing-assistance .text-link{font-size:14px;line-height:1.5;min-height:44px}
+.section-label,.hero-kicker,.badge-launch,.hero-price>span,.residence-eyebrow,.signature-price>span,.modal-brand{font-size:11px;line-height:1.5;letter-spacing:1.5px}
+.hero-description,#overview .overview-text,.section-sub,.dev-card>p,.tour-copy>p:not(.section-label),.faq p,.pricing-assistance p span,.contact-points li{font-size:15px;line-height:1.75}
+.hero-assurance,.hero-price small,.floating-note small,.signature-residence>small,.option-action>span,.plan-head p,.plan-hint,.loc-list .loc-note,.art-note{font-size:12px;line-height:1.6}
+.feature-chips li,#overview .feature-chips li{font-size:11px;line-height:1.6;padding:5px 9px}
+#overview .stats span,.dev-stats span{font-size:12px;line-height:1.5;max-width:115px}
+.highlight-list p,.amenity p,.amenity:first-child p,.loc-list li,.gallery-item:after,.form-control,.form-card .form-control,.modal-sub{font-size:14px;line-height:1.65}
+.highlight-list h3,.amenity h3{font-size:21px}.option-number,.signature-size span,.residence-option>p span{font-size:12px}
+.checkbox-section p,.footer-rera,.footer-disclaimer,.footer-bottom{font-size:12px;line-height:1.7}
+.form-status,.form-service-status{font-size:14px}.render figcaption,.overview-grid figcaption{font-size:12px;padding:6px 10px}
+.gallery-item:after{font-size:13px}.loc-time{font-size:19px}.dev-stats li{gap:15px}
+.mobile-actions>*{font-size:13px;min-height:48px}.modal-title{font-size:30px}.form-group{min-width:0}
+/* Keep the brand and call button reachable; only the menu scrolls on short screens. */
+.sidebar{overflow:hidden;min-height:0;gap:0}
+.sidebar .brand{flex-shrink:0;padding-bottom:16px}.brand-top,.sidebar .brand-top{font-size:10px;letter-spacing:1.2px}.brand-sub,.sidebar .brand-sub{font-size:9px;letter-spacing:1px}
+.nav-caption{font-size:10px;letter-spacing:1.2px;flex-shrink:0;margin-bottom:12px}
+.sidebar nav{flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:#b2a17f transparent;overscroll-behavior:contain}
+.sidebar nav a{font-size:13px;min-height:39px;line-height:1.35;padding:7px 8px;gap:9px}.sidebar nav a>span{font-size:10px;width:24px;height:24px}.sidebar nav a i{font-size:16px}
+.sidebar-bottom{flex-shrink:0;padding:15px 9px 5px;margin-top:0}.sidebar-bottom>span{font-size:9px;letter-spacing:.6px}.sidebar-bottom>a{font-size:20px}.sidebar-bottom .btn{font-size:11px;line-height:1.5;padding:10px 8px;min-height:44px}.sidebar-bottom small{font-size:11px;line-height:1.5;margin-top:8px}
+.hero{height:100vh;height:100svh;min-height:0;display:grid;grid-template-rows:auto minmax(0,1fr);padding-bottom:0}
+.hero-topline{font-size:11px;line-height:1.5;padding-block:16px;gap:15px;min-width:0}.hero-topline>a{font-size:12px}
+.hero-grid{min-height:0;height:100%;padding:25px 0 35px;gap:2%;width:100%;max-width:1400px;grid-template-columns:1.05fr 1fr;align-items:center;margin-inline:auto}
+.hero-content{transform:none;min-width:0;max-width:610px;padding:clamp(22px,2.3vw,38px);width:100%}
+.hero-grid h1{font-size:clamp(38px,3.65vw,66px);line-height:1.08;letter-spacing:-1.5px}.hero-kicker{margin:19px 0 13px}.hero-description{margin:18px 0;max-width:440px}
+.hero-price{margin:20px 0;padding-left:15px}.hero-price p{margin:7px 0}.hero-price strong{font-size:36px}.hero-ctas{gap:12px 18px}.hero-ctas .btn{padding:13px 17px}.hero-assurance{margin-top:14px}
+.hero-art{width:100%;height:min(100%,660px);max-width:600px;margin:0;padding:40px 10px 75px 0;transform:none;align-self:center;min-height:0}
+.arch-frame{height:100%;aspect-ratio:auto;min-height:0;margin:0 0 0 12px;transform:rotate(3deg);border-width:10px}.arch-frame img{height:100%;width:100%;object-fit:cover}
+.art-stamp{top:5px;right:0;width:96px;height:96px;font-size:29px}.art-stamp small{font-size:8px;letter-spacing:.5px}
+.floating-note{bottom:35px;left:3%;right:0;padding:22px}.floating-note>span{font-size:10px;letter-spacing:1px}.floating-note strong{font-size:clamp(22px,2vw,30px);margin:9px 0}.floating-note small{font-size:12px}.floating-note:after{width:45px;height:45px;top:-25px}
+.image-caption{font-size:10px;letter-spacing:1px}.ai-tag{font-size:10px;bottom:8px}
+.hero-foot{margin:20px 5% 12px;padding-block:22px}.hero-fact>span{font-size:12px;line-height:1.5;letter-spacing:.2px}.hero-fact strong small{font-size:17px}.hero-fact>strong{font-size:34px}
+.signature-residence{padding:30px}.residence-eyebrow{margin-top:20px}.residence-option h3{min-height:65px}.residence-option>p{line-height:1.5}.option-action{align-items:center}.option-action button{width:44px;height:44px;flex-shrink:0}.signature-residence>small{margin-top:15px}.pricing-assistance{align-items:center}
+.amenity{grid-template-columns:45px 1fr;padding:23px 20px;min-width:0}.amenity h3,.amenity p{overflow-wrap:break-word}.dev-card{gap:25px}.faq summary{font-size:22px}
+.section-title{font-size:clamp(30px,3vw,44px)}.section-head{padding-right:105px}.section-head:before{font-size:100px}.section-sub{max-width:690px}
+@media(min-width:1600px){.sidebar nav a{font-size:14px;min-height:43px}.hero-grid h1{font-size:66px}.hero-content{padding:34px}.hero-description{font-size:16px}.hero-art{height:min(100%,740px)}}
+@media(max-width:1200px){.sidebar nav a{font-size:12px;gap:7px}.sidebar .brand:before{display:none}.sidebar-bottom>a{font-size:19px}.sidebar-bottom>span{font-size:8px}.sidebar-bottom .btn{font-size:10px}.sidebar .brand-main{font-size:28px}.hero-content{padding:23px}.hero-grid h1{font-size:43px}.hero-description{font-size:14px}.hero-ctas .btn{font-size:11px;padding:12px}.hero-price strong{font-size:33px}.hero-ctas{gap:10px}.hero-art{padding-left:0}.floating-note{padding:18px}.floating-note strong{font-size:23px}.floating-note small{font-size:11px}.residence-selection{gap:25px;grid-template-columns:1fr 1.25fr}.signature-residence{padding:26px 23px}.residence-option{padding-right:16px}.residence-option:nth-child(even){padding-left:16px}.residence-option h3{font-size:22px}.residence-option>p{font-size:21px}.option-action>span{font-size:12px}.highlight-list{grid-template-columns:1fr}.highlight-list li{display:grid;grid-template-columns:30px 1fr;gap:15px}.hl-no{margin-bottom:0}.highlights-media{max-height:none}.amenity-grid{grid-template-columns:repeat(2,1fr)}.dev-stats li{display:block}.dev-stats span{display:block;margin-top:8px;max-width:none}.loc-list li{font-size:13px}.form-card .form-control{font-size:15px}.hero-fact>span{font-size:12px}}
+/* Fit the opening content by reducing spacing, rather than shrinking labels to 7px. */
+@media(min-width:701px) and (max-height:800px){.hero-topline{padding-block:11px;font-size:10px}.hero-grid{padding:16px 0 22px}.hero-content{padding:20px 23px}.hero-grid h1{font-size:clamp(35px,3.3vw,49px)}.hero-kicker{margin:12px 0 10px;font-size:10px}.badge-launch{font-size:10px}.hero-description{font-size:14px;line-height:1.6;margin:13px 0}.hero-price{margin:14px 0}.hero-price strong{font-size:31px}.hero-price>span{font-size:10px}.hero-price small{font-size:12px}.hero-price p{margin:5px 0}.hero-ctas .btn{min-height:44px;padding:11px 13px;font-size:11px}.hero-assurance{font-size:11px;margin-top:10px}.hero-art{padding-top:30px;padding-bottom:65px}.art-stamp{width:80px;height:80px;top:0;font-size:25px;border-width:7px}.art-stamp small{font-size:7px}.floating-note{bottom:26px;padding:18px}.floating-note strong{font-size:23px}.floating-note small{font-size:11px}.floating-note>span{font-size:9px}.ai-tag{bottom:4px}.sidebar .brand{padding-bottom:10px}.sidebar .brand-main{margin-block:8px}.sidebar nav a{min-height:35px;font-size:12px}.sidebar-bottom>span,.sidebar-bottom small{display:none}.sidebar-bottom{padding-top:12px}.nav-caption{font-size:9px;margin-bottom:9px}}
+@media(max-width:1023px){.hero{padding-top:65px}.hero-topline{font-size:10px}.hero-grid{gap:15px}.hero-content{padding:25px}.hero-grid h1{font-size:39px}.hero-description{font-size:14px}.hero-price>span{font-size:10px}.hero-ctas{align-items:flex-start}.hero-ctas .btn{width:100%;justify-content:space-between}.hero-ctas .text-link{min-height:36px;padding-block:5px}.hero-assurance{font-size:11px}.sidebar nav a{font-size:14px;min-height:42px}.sidebar .brand{display:none}.sidebar-bottom>span,.sidebar-bottom small{display:block}.sidebar-bottom>span{font-size:9px}.sidebar-bottom small{font-size:11px}.sidebar-bottom .btn{font-size:11px}.nav-caption{font-size:10px}.section-head{padding-right:80px}.section-head:before{font-size:85px}.overview-grid figcaption{font-size:11px}.amenity{padding:22px 17px}.amenity:first-child p{font-size:14px}.residence-selection{grid-template-columns:1fr;gap:28px}.signature-residence{display:grid;grid-template-columns:1fr 1fr;gap:15px 25px;align-items:center}.residence-eyebrow{grid-column:1/-1;margin:10px 0}.signature-residence h3{grid-column:1;grid-row:2/4}.signature-size{grid-column:2;padding:0 0 12px}.signature-price{grid-column:2;margin:0}.signature-residence .btn{grid-column:1/-1}.signature-residence>small{grid-column:1/-1;margin:0}.signature-residence h3{font-size:45px}.residence-option h3{min-height:55px}.contact-grid{gap:20px}.contact-grid .form-card{padding:25px}.contact-points li{font-size:14px}.plan-head h3{font-size:26px}.plan-head p{font-size:12px}}
+@media(max-width:700px){
+ .hero{padding:65px 5% 0;min-height:100vh;min-height:100svh;height:100vh;height:100svh;grid-template-rows:auto minmax(0,1fr)}
+ .hero-topline{font-size:10px;padding:15px 0;letter-spacing:.7px}.hero-topline span{font-size:10px;letter-spacing:.7px}
+ .hero-grid{display:grid;grid-template-columns:1fr;gap:0;position:relative;padding:15px 0 30px;isolation:isolate}
+ .hero-grid:before,.hero-grid:after{display:none}.hero-content{align-self:center;padding:27px 24px;background:linear-gradient(125deg,#fffdf1df,#faf5e6c4);max-width:540px;margin:auto;backdrop-filter:blur(7px)}
+ .hero-grid h1{font-size:clamp(34px,8.8vw,52px);line-height:1.08}.hero-kicker{font-size:10px;margin:17px 0 12px;letter-spacing:1.3px}.badge-launch{font-size:10px;letter-spacing:1px}.hero-description{font-size:14px;line-height:1.7;margin:18px 0}.hero-price{margin:18px 0}.hero-price>span{font-size:10px;letter-spacing:.8px}.hero-price strong{font-size:35px}.hero-price small{font-size:12px}.hero-ctas{gap:10px;align-items:center}.hero-ctas .btn{width:100%;padding:13px 16px;font-size:12px;min-height:46px}.hero-ctas .text-link{font-size:13px;padding:7px 0;min-height:34px}.hero-assurance{font-size:11px;margin-top:12px;line-height:1.5}
+ .hero-art{position:absolute;inset:10px -5% 20px;width:110%;max-width:none;height:auto;margin:0;padding:0;z-index:-1;opacity:.25;pointer-events:none}.arch-frame{height:100%;width:100%;margin:0;border:0;transform:none;box-shadow:none;border-radius:100px 7px 7px 7px}.arch-frame:before{display:none}.arch-frame picture{height:100%}.arch-frame img{object-fit:cover;object-position:center 55%;filter:saturate(.5)}.art-stamp,.floating-note,.hero-art .ai-tag,.image-caption{display:none}
+ .hero-foot{margin:18px 5% 5px;padding:0 15px}.hero-fact{padding:19px 8px}.hero-fact>span{font-size:12px;letter-spacing:0}.hero-fact strong small{font-size:15px}.hero-fact>strong{font-size:31px}
+ .section-title{font-size:30px}.section-head{padding-right:38px}.section-head:before{font-size:65px;opacity:.65;right:-2px}.section-label{font-size:10px;letter-spacing:1.1px;gap:10px}.section-label:before{width:26px}.section-sub{font-size:14px}
+ #overview .overview-copy .quote-card{font-size:23px;line-height:1.5}#overview .overview-text{font-size:15px;line-height:1.75}#overview .stats{gap:20px 14px}#overview .stats strong{font-size:32px}#overview .stats span{font-size:11px;max-width:90px}#overview .feature-chips li{font-size:11px}#overview .btn-row .btn{font-size:11px;padding:12px}.overview-grid figcaption{font-size:10px}.render figcaption{font-size:11px}
+ .highlight-list{grid-template-columns:1fr}.highlight-list li,.highlight-list li:nth-child(even){padding:23px 20px;display:grid;grid-template-columns:30px 1fr;gap:15px}.highlight-list h3{font-size:21px}.highlight-list p{font-size:14px;line-height:1.7}.hl-no{font-size:17px;margin:0}
+ .amenity-grid{gap:15px}.amenity,.amenity:nth-child(even){padding:22px 17px;min-height:205px}.amenity h3{font-size:20px}.amenity p{font-size:13px;line-height:1.65}.amenity:first-child{padding:27px 22px}.amenity:first-child h3{font-size:32px}.amenity:first-child p{font-size:14px;max-width:210px}.amenity-ico{width:48px;height:48px}
+ .signature-residence{display:flex;gap:0;padding:30px 25px}.residence-eyebrow{font-size:10px;line-height:1.6;letter-spacing:1px;margin:7px 0 22px}.signature-residence h3{font-size:42px}.signature-size{width:100%;padding:20px 0 16px}.signature-size span{font-size:12px}.signature-price{margin:21px 0}.signature-price>span{font-size:11px}.signature-residence .btn{font-size:12px;min-height:46px}.signature-residence>small{font-size:12px;line-height:1.7;margin-top:14px}.residence-intro{font-size:29px}.residence-option h3{font-size:22px;min-height:82px}.residence-option>p{font-size:21px;line-height:1.5;min-height:63px}.residence-option>p span{font-size:11px;display:block}.option-number{font-size:11px}.option-action{align-items:center;flex-wrap:wrap;gap:10px}.option-action>span{font-size:12px;max-width:none}.option-action button{width:44px;height:44px;font-size:21px}.pricing-assistance p{font-size:23px}.pricing-assistance p span{font-size:14px;line-height:1.7}.pricing-assistance .text-link{font-size:14px}
+ .plan-head h3{font-size:27px}.plan-head p{font-size:13px;line-height:1.7}.plan-hint{font-size:12px}.plan-lock .btn{font-size:11px}.tour-copy .section-title{font-size:32px}.tour-copy>p:not(.section-label){font-size:14px;line-height:1.75}.tour-copy .btn{font-size:11px;padding:12px}.loc-list li{font-size:13px;line-height:1.6;gap:12px}.loc-time{font-size:18px}.loc-list .loc-note{font-size:12px}.map-cta{font-size:13px;padding:13px 17px}.gallery-item:after{font-size:12px}.art-note{font-size:12px}.dev-card>p{font-size:15px;line-height:1.75}.dev-stats span{font-size:12px}.faq summary{font-size:21px;line-height:1.45}.faq p{font-size:14px;line-height:1.75}.faq:before{font-size:11px}.contact-points li{font-size:15px}.form-card .form-control,.form-control{font-size:16px;line-height:1.5}.form-card .submit_btn{font-size:12px;min-height:48px}.checkbox-section p{font-size:12px;line-height:1.7}.footer-rera,.footer-disclaimer,.footer-bottom{font-size:12px;line-height:1.75}.mobile-header a span{font-size:9px;letter-spacing:1px}.mobile-actions>*{font-size:12px;line-height:1.5;min-height:48px}.modal-sub{font-size:14px}.modal-title{font-size:29px}
+}
+@media(max-width:700px) and (max-height:760px){.hero-content{padding:20px 22px}.hero-topline{padding-block:10px}.hero-grid{padding-block:10px 22px}.hero-grid h1{font-size:36px}.hero-kicker{margin:12px 0 10px}.hero-description{margin:12px 0;font-size:14px;line-height:1.6}.hero-price{margin:13px 0}.hero-price strong{font-size:31px}.hero-ctas{gap:6px}.hero-assurance{margin-top:8px}.hero-ctas .text-link{min-height:30px;padding-block:4px}}
+/* Very short landscape windows expand naturally so text and actions stay accessible. */
+@media(max-height:579px){.hero{height:auto;min-height:100vh;min-height:100svh}.hero-grid{min-height:480px;height:auto}.hero-art{height:450px}.hero-content{margin-block:15px}.sidebar .brand-top,.sidebar .brand-sub,.nav-caption{display:none}.sidebar .brand{padding-bottom:8px}.sidebar .brand-main{font-size:24px}.sidebar-bottom>a{font-size:17px;margin:5px 0 9px}.sidebar-bottom .btn{font-size:10px}.sidebar nav a{font-size:12px;min-height:35px}}
+@media(max-width:359px){.hero-grid h1{font-size:33px}.hero-content{padding:20px 18px}.hero-price>span{font-size:9px}.badge-launch{font-size:9px}.hero-topline span{font-size:9px}.hero-description{font-size:14px}.residence-option h3{font-size:20px}.residence-option>p{font-size:19px}.amenity h3{font-size:18px}.amenity p{font-size:13px}.section-title{font-size:28px}}
+@media(prefers-reduced-motion:reduce){.option-action button{transition:none}}
+@media(max-width:700px){.hero{padding-bottom:calc(48px + env(safe-area-inset-bottom))}}
+@media(max-width:700px) and (max-height:760px){
+ .hero-kicker,.hero-assurance{display:none}
+ .badge-launch{margin-bottom:13px}
+ .hero-ctas{display:grid;grid-template-columns:1.45fr 1fr;gap:12px;width:100%;align-items:center}
+ .hero-ctas .btn{width:100%;font-size:11px;line-height:1.4;gap:7px;padding:11px 10px;min-height:46px}
+ .hero-ctas .text-link{font-size:12px;line-height:1.5;width:fit-content;min-height:36px;padding-block:7px}
+ .hero-grid{padding-top:5px;padding-bottom:16px}
+ .hero-content{padding:20px 21px}
+}
+@media(max-width:359px) and (max-height:760px){
+ .hero-grid h1{font-size:31px;letter-spacing:-1.1px}
+ .hero-content{padding:18px}
+ .hero-description{font-size:14px;line-height:1.55;margin-block:12px}
+ .hero-price{margin-block:12px}
+ .hero-ctas{grid-template-columns:1.4fr 1fr;gap:9px}
+ .hero-ctas .btn{font-size:10px;letter-spacing:.3px}
+ .hero-ctas .text-link{font-size:12px}
+}
+/* Mobile narrative: tower image, residence details, then the same enquiry form. */
+@media(max-width:700px){
+ .hero{height:auto;min-height:100svh;display:block;padding:65px 5% 0}
+ .hero-topline{display:none}
+ .hero-grid{display:flex;flex-direction:column;height:auto;min-height:0;gap:26px;padding:8px 0 26px;isolation:auto}
+ .hero-art{order:0;position:relative;inset:auto;width:100%;height:auto;max-width:540px;margin:0 auto;padding:0;opacity:1;z-index:auto;pointer-events:auto;align-self:auto;transform:none}
+ .arch-frame{height:auto;width:100%;aspect-ratio:1.04;margin:0;border:8px solid #fcf7e8b3;border-radius:65px 7px 7px 7px;box-shadow:12px 18px 23px #514a3b2b;transform:none;overflow:hidden}
+ .arch-frame picture{height:100%;width:100%;border-radius:57px 3px 3px 3px;overflow:hidden}
+ .arch-frame img{height:100%;object-fit:cover;object-position:center 48%;filter:saturate(.75)}
+ .hero-content{order:1;margin:0 auto;max-height:none;padding:27px 24px;width:100%;max-width:540px;background:linear-gradient(125deg,#fffdf1df,#faf5e6b8);backdrop-filter:none}
+ .hero-grid h1{font-size:clamp(35px,9vw,50px)}
+ .hero-kicker{display:block;margin:17px 0 12px;font-size:10px}.badge-launch{margin-bottom:0}
+ .hero-description{font-size:15px;line-height:1.7;margin:18px 0}.hero-price{margin:20px 0}.hero-price strong{font-size:35px}
+ .hero-ctas{display:flex;flex-direction:column;align-items:flex-start;gap:10px}.hero-ctas .btn{font-size:12px;padding:14px 17px;min-height:46px;width:100%;justify-content:space-between}.hero-ctas .text-link{font-size:14px;min-height:38px}.hero-assurance{display:block;font-size:12px;margin-top:13px}
+ .hero-grid>.hero-enquiry{order:2;width:100%;max-width:540px;align-self:center;margin:0;padding:28px 24px;transform:none;backdrop-filter:none;background:linear-gradient(125deg,#fffdf1df,#faf5e6b8)}
+ .hero-enquiry .form-title{font-size:28px;margin-bottom:18px;padding-bottom:18px}.hero-enquiry .form-control{font-size:16px;padding-block:13px}.hero-enquiry .form-group{margin-bottom:16px}.hero-enquiry .submit_btn{font-size:12px;min-height:48px}.hero-enquiry .checkbox-section p{font-size:12px;line-height:1.7}
+ .hero-foot{margin-top:12px}
+}
+@media(max-width:359px){.hero-content,.hero-grid>.hero-enquiry{padding:25px 21px}.hero-grid h1{font-size:33px}.hero-price>span{font-size:10px}.hero-description{font-size:14px}.arch-frame{aspect-ratio:1}.hero-enquiry .form-title{font-size:26px}}
+
+/* Lock the underlying page as well as fitting the mobile enquiry sheet. */
+html.dialog-open{overflow:hidden;overscroll-behavior:none}
+html.dialog-open body{position:fixed;top:var(--dialog-scroll-top);left:0;right:0;width:100%;overflow:hidden;overscroll-behavior:none}
+@media(max-width:700px){
+ #enquiryModal{padding:12px;padding-top:max(12px,env(safe-area-inset-top));padding-bottom:max(12px,env(safe-area-inset-bottom));overflow:hidden;overscroll-behavior:none}
+ #enquiryModal .modal-box{padding:23px 22px 20px;max-height:calc(100svh - 24px);max-height:calc(100dvh - 24px);overflow:hidden;border-radius:10px}
+ #enquiryModal .modal-brand{font-size:10px;line-height:1.3;letter-spacing:1px;display:block;padding-right:24px}
+ #enquiryModal .modal-title{font-size:26px;line-height:1.15;margin:12px 20px 10px 0}
+ #enquiryModal .modal-sub{font-size:12px;line-height:1.45;margin-bottom:14px}
+ #enquiryModal .form-group{margin-bottom:10px}
+ #enquiryModal .form-control{font-size:16px;line-height:1.4;padding:10px 2px;min-height:42px}
+ #enquiryModal .submit_btn{font-size:12px;line-height:1.4;min-height:44px;padding:12px 17px;margin-top:5px}
+ #enquiryModal .checkbox-section{gap:8px;margin-top:12px}
+ #enquiryModal .checkbox-section p{font-size:11px;line-height:1.5}
+ #enquiryModal .checkbox-section input{margin-top:3px}
+ #enquiryModal .modal-close{width:40px;height:40px;right:7px;top:5px;font-size:29px;line-height:1}
+ #enquiryModal .invalid-data{font-size:11px;line-height:1.35;padding:3px 0!important;background:transparent!important}
+}
+@media(max-width:700px) and (max-height:650px){
+ #enquiryModal .modal-box{padding:19px 19px 17px}
+ #enquiryModal .modal-brand{display:none}
+ #enquiryModal .modal-title{font-size:24px;margin:5px 25px 8px 0}
+ #enquiryModal .modal-sub{margin-bottom:10px}
+ #enquiryModal .form-group{margin-bottom:7px}
+ #enquiryModal .form-control{padding-block:8px;min-height:40px}
+ #enquiryModal .checkbox-section{margin-top:10px}
+}
+@media(max-width:1023px) and (max-height:520px){
+ #enquiryModal{padding:10px;overflow:hidden;overscroll-behavior:none}
+ #enquiryModal .modal-box{max-width:640px;max-height:calc(100dvh - 20px);padding:17px 22px;overflow:hidden}
+ #enquiryModal .modal-brand{display:none}
+ #enquiryModal .modal-title{font-size:23px;line-height:1.15;margin:2px 30px 6px 0}
+ #enquiryModal .modal-sub{font-size:12px;line-height:1.4;margin-bottom:12px}
+ #enquireBodypopup{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}
+ #enquiryModal .form-group{margin:0;min-width:0}
+ #enquiryModal .form-control{font-size:16px;padding:7px 2px;line-height:1.4;min-height:38px}
+ #SubmitQuerypopup,#enquiryModal .checkbox-section{grid-column:1/-1}
+ #SubmitQuerypopup{min-height:42px;margin:1px 0 0;padding:10px 15px;font-size:12px}
+ #enquiryModal .checkbox-section{margin:0;gap:8px}
+ #enquiryModal .checkbox-section p{font-size:11px;line-height:1.4}
+ #enquiryModal .modal-close{width:38px;height:38px;right:6px;top:4px;line-height:1}
+}

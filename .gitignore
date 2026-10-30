@@ -1,0 +1,13 @@
+# Local browser profiles and generated verification artifacts
+.qa-browser/
+preview-*.webp
+qa-results.json
+*.zip
+
+# Local configuration and dependencies
+.env
+.env.*
+!.env.example
+node_modules/
+.DS_Store
+Thumbs.db

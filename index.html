@@ -545,7 +545,46 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/intlTelInput.min.js"></script>
     <script src="js/intl.custom.js"></script>
-  
+    <script type="text/javascript">
+        var versionUpdate = (new Date()).getTime();
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://api2.gtftech.com/scripts/queryform.min.ssl.js?v=" + versionUpdate;
+        document.body.appendChild(script);
+    </script>
+
+    <script>
+        var AgentInfo = {
+            "vAgentID": "****",
+            "vProject": "Project name, Location",
+            "vURL": "https://godrejluxuryhomesindia.com/noida/godrej-dmic/",
+            "thankspageurl": "https://godrejluxuryhomesindia.com/noida/godrej-dmic/thanks.htm"
+        };
+
+        $('#preferedtime').hide();
+
+        $("#SubmitQuery").click(function () {
+            var FormInfo = {
+                "SenderControlID": "qSenderName",
+                "SenderControlMobileID": "qMobileNo",
+                "SenderControlCountryCodeID": "qCountryCode1",
+                "SenderControlEmailID": "qEmailID",
+                "SenderControlMsgID": "qMessage"
+            };
+            SubmitQueryData(AgentInfo, FormInfo);
+        });
+
+        $("#SubmitQuerypopup").click(function () {
+            var FormInfo = {
+                "SenderControlID": "qSenderNamepopup",
+                "SenderControlMobileID": "qMobileNopopup",
+                "SenderControlCountryCodeID": "qCountryCode2",
+                "SenderControlEmailID": "qEmailIDpopup",
+                "SenderControlMsgID": "qMessagepopup"
+            };
+            SubmitQueryData(AgentInfo, FormInfo);
+        });
+    </script>
 
 
 
